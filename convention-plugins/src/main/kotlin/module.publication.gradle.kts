@@ -8,8 +8,11 @@ plugins {
 }
 
 publishing {
+    group = "com.anbui.compostory"
+    version = "0.0.1"
     // Configure all publications
     publications.withType<MavenPublication> {
+
         // Stub javadoc.jar artifact
         artifact(tasks.register("${name}JavadocJar", Jar::class) {
             archiveClassifier.set("javadoc")
@@ -18,26 +21,26 @@ publishing {
 
         // Provide artifacts information required by Maven Central
         pom {
-            name.set("Kotlin Multiplatform library template")
-            description.set("Dummy library to test deployment to Maven Central")
-            url.set("https://github.com/Kotlin/multiplatform-library-template")
+            name.set("Compostory")
+            description.set("Library for Compose Multiplatform UI Management")
+            url.set("https://github.com/AnBuiii/Compostory")
 
             licenses {
                 license {
-                    name.set("MIT")
-                    url.set("https://opensource.org/licenses/MIT")
+                    name.set("Apache")
+                    url.set("https://opensource.org/license/apache-2-0")
                 }
             }
             developers {
                 developer {
-                    id.set("JetBrains")
-                    name.set("JetBrains Team")
-                    organization.set("JetBrains")
-                    organizationUrl.set("https://www.jetbrains.com")
+                    id.set("AnnBuiii")
+                    name.set("Bui Le Hoai An")
+                    organization.set("Github")
+                    organizationUrl.set("https://github.com/AnBuiii")
                 }
             }
             scm {
-                url.set("https://github.com/Kotlin/multiplatform-library-template")
+                url.set("https://github.com/AnBuiii/Compostory")
             }
         }
     }
