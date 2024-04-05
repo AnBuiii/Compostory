@@ -1,7 +1,7 @@
 package repostory
 
-class CompostoryRepository {
-    private val screens = hashMapOf<String, () -> Unit>()
+internal class CompostoryRepository {
+    internal val screens = hashMapOf<String, () -> Unit>()
 
     fun addScreen(name: String, callback: () -> Unit) {
         screens[name] = callback
