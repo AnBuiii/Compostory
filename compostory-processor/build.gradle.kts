@@ -11,6 +11,11 @@ kotlin {
                 api(project(":compostory-annotations"))
             }
         }
+        val jvmMain by getting {
+            dependencies {
+                implementation(libs.symbol.processing.api)
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(libs.kotlin.test)
