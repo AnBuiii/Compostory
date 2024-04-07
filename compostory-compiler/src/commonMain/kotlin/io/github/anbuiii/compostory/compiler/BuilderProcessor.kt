@@ -1,8 +1,8 @@
-package processors
+package io.github.anbuiii.compostory.compiler
 
 import com.google.devtools.ksp.processing.*
 import com.google.devtools.ksp.symbol.KSAnnotated
-import utils.writeText
+import io.github.anbuiii.compostory.compiler.utils.writeText
 
 /**
  * Builder for Local Navigator

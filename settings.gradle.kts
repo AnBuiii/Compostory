@@ -1,3 +1,4 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 pluginManagement {
     includeBuild("convention-plugins")
     repositories {
@@ -18,5 +19,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Compostory"
-include(":compostory-processor")
+include(":compostory-compiler")
 include(":compostory-annotations")

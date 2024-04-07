@@ -1,13 +1,13 @@
-package processors
+package io.github.anbuiii.compostory.compiler
 
-import com.compostory.Compostory
 import com.google.devtools.ksp.processing.*
 import com.google.devtools.ksp.symbol.KSAnnotated
 import com.google.devtools.ksp.symbol.KSFunctionDeclaration
 import com.google.devtools.ksp.symbol.KSVisitorVoid
 import com.google.devtools.ksp.validate
-import repostory.CompostoryRepository
-import utils.writeText
+import io.github.anbuiii.compostory.annotation.Compostory
+import io.github.anbuiii.compostory.compiler.repostory.CompostoryRepository
+import io.github.anbuiii.compostory.compiler.utils.writeText
 
 internal class CompostoryProcessor(
     val codeGenerator: CodeGenerator,

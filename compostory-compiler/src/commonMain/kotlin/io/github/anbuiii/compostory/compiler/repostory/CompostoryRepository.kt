@@ -1,4 +1,4 @@
-package repostory
+package io.github.anbuiii.compostory.compiler.repostory
 
 internal class CompostoryRepository {
     internal val screens = hashMapOf<String, () -> Unit>()

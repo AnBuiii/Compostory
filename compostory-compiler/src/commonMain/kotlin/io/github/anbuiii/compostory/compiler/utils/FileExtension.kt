@@ -1,7 +1,7 @@
 /**
  * @author An Bui
  */
-package utils
+package io.github.anbuiii.compostory.compiler.utils
 
 import java.io.OutputStream
 

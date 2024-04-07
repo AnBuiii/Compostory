@@ -2,7 +2,7 @@
  * @author An Bui
  */
 
-package com.compostory
+package io.github.anbuiii.compostory.annotation
 
 
 /**
