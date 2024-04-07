@@ -3,7 +3,7 @@ plugins {
 }
 
 allprojects {
-    group = "com.anbui.compostory"
+    group = "io.github.anbuiii.compostory"
     version = "0.0.1"
 }
 

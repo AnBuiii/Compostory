@@ -8,8 +8,6 @@ plugins {
 }
 
 publishing {
-    group = "com.anbui.compostory"
-    version = "0.0.1"
     // Configure all publications
     publications.withType<MavenPublication> {
 
@@ -33,10 +31,11 @@ publishing {
             }
             developers {
                 developer {
-                    id.set("AnnBuiii")
+                    id.set("anbuiii")
                     name.set("Bui Le Hoai An")
                     organization.set("Github")
                     organizationUrl.set("https://github.com/AnBuiii")
+                    email.set("builehoaian2002@gmail.com")
                 }
             }
             scm {
